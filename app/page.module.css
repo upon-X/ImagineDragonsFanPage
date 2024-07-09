@@ -1,9 +1,62 @@
-main .main {
+.main {
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #1a1a1a;
   color: white;
+  user-select: none;
+}
+
+.dan_reynolds_image {
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
+section .title_image {
+  display: flex;
+  flex-direction: column;
+}
+
+.band_image {
+  mask-image: linear-gradient(
+    to right,
+    transparent 10%,
+    black 20%,
+    black 80%,
+    transparent 95%
+  );
+}
+
+.title,
+.logo_band {
+  margin-top: -8rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+@media (width < 1024px) {
+  .main {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+  .logo_band {
+    margin-top: -4rem;
+  }
+}
+@media (width < 768px) {
+  .main {
+    scale: 0.8;
+  }
+  .logo_band {
+    z-index: -1;
+  }
+}
+@media (width < 480px) {
+  .main {
+    scale: 0.65;
+  }
 }
