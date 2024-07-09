@@ -1,0 +1,21 @@
+.navbar {
+  color: rgb(255, 255, 255);
+  width: 100vw;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+
+.navlink {
+  padding: 0.6rem 4rem;
+  border-bottom: 2px solid transparent;
+}
+
+.actual_page {
+  border-color: white;
+}

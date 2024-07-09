@@ -1,95 +1,46 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Navbar } from "@/components/Navbar/Navbar";
+import { Posts } from "@/components/Posts";
 
 export default function Home() {
+  const logoBand2 =
+    "https://res.cloudinary.com/dzhiauyws/image/upload/v1720537082/Imagine%20Dragons/imaginedragons_jufa4y.webp";
+  const BandMembers =
+    "https://res.cloudinary.com/dzhiauyws/image/upload/v1720556759/Imagine%20Dragons/imaginedragonsband_ictzde.webp";
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+      {/* <Image
+        className={styles.dan_reynolds_image}
+        src={DanReynolds}
+        width={450}
+        height={450}
+        alt={"Dan Reynolds"}
+      /> */}
+      <header className={styles.header}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className={styles.band_image}
+          src={BandMembers}
+          width={1100}
+          height={600}
+          alt="Imagine Dragons Band"
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <section className={styles.title_image}>
+          <Image
+            className={styles.logo_band}
+            src={logoBand2}
+            width={400}
+            height={400}
+            alt={"Logo Imagine Dragons"}
+          />
+          <h1 className={styles.title}>
+            The official fanpage for Firebreathers around the world
+          </h1>
+        </section>
+      </header>
+      <Navbar />
+      <Posts />
     </main>
   );
 }
