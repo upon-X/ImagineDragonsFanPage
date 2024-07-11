@@ -19,3 +19,14 @@
 .actual_page {
   border-color: white;
 }
+
+@media (width < 1024px) {
+  .navlinks {
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .navlink {
+    padding: 0.6rem 2rem;
+  }
+}

@@ -9,18 +9,21 @@
   justify-content: center;
   color: white;
   user-select: none;
+  padding: 0 1rem;
+  height: 550px;
 }
 
-.dan_reynolds_image {
-  mask-image: linear-gradient(black 80%, transparent);
-}
-
-section .title_image {
-  display: flex;
-  flex-direction: column;
+.title_image {
+  width: 400px;
+  position: absolute;
+  top: auto;
+  right: 15vw;
 }
 
 .band_image {
+  position: absolute;
+  top: auto;
+  left: 10vw;
   mask-image: linear-gradient(
     to right,
     transparent 10%,
@@ -35,6 +38,24 @@ section .title_image {
   margin-top: -8rem;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.title_span {
+  background: linear-gradient(
+    90deg,
+    #ff6741,
+    #cc4dff
+  ); /* Define el degradado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (width < 1440px) {
+  .title_image {
+    left: 8vw;
+  }
 }
 
 @media (width < 1024px) {
