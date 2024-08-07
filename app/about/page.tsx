@@ -3,7 +3,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
-    <section color="white">
+    <section style={{ color: "white" }}>
       <Navbar />
       <h1>About</h1>
       <p>
