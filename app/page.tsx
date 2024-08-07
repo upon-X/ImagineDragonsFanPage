@@ -13,6 +13,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <Navbar />
       <header className={styles.header}>
         <Image
           className={styles.band_image}
@@ -36,7 +37,6 @@ export default function Home() {
           </h1>
         </section>
       </header>
-      <Navbar />
       <Posts />
     </main>
   );
