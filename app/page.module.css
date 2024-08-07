@@ -56,28 +56,46 @@
   .title_image {
     left: 8vw;
   }
+  .band_image {
+    aspect-ratio: 16/9;
+    max-width: 90vw;
+    min-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 @media (width < 1024px) {
   .main {
     align-items: center;
     justify-content: flex-start;
-    flex-direction: column-reverse;
   }
   .logo_band {
     margin-top: -4rem;
   }
-}
-@media (width < 768px) {
-  .main {
-    scale: 0.8;
+  .band_image {
+    width: 700px;
+    max-height: 350px;
   }
+}
+
+@media (width < 768px) {
   .logo_band {
     z-index: -1;
   }
+  .band_image {
+    mask-image: linear-gradient(
+      to right,
+      transparent 5%,
+      black 15%,
+      black 85%,
+      transparent 95%
+    );
+  }
 }
 @media (width < 480px) {
-  .main {
-    scale: 0.65;
+  .band_image {
+    width: 500px;
+    max-height: 200px;
   }
 }
