@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar/Navbar";
 import styles from "./page.module.css";
-import Link from "next/link";
+import Carousel from "@/components/Carousel/Carousel";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
@@ -18,6 +18,7 @@ export default function About() {
           in the chart-topping singles "Radioactive" and "Demons".
         </p>
       </section>
+      <Carousel />
     </>
   );
 }
