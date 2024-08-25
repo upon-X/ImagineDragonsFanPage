@@ -7,7 +7,7 @@ const OPTIONS: EmblaOptionsType = {
   loop: true,
   slidesToScroll: 1,
 };
-const SLIDE_COUNT = 10;
+const SLIDE_COUNT = 4;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 export default function Carousel() {
