@@ -4,6 +4,7 @@
   --slide-height: 60vh;
   --slide-spacing: 1.5rem;
   --slide-size: 50%;
+  margin-bottom: 2rem;
 }
 .embla__viewport {
   overflow: hidden;
@@ -129,4 +130,14 @@
 .embla__slide__info__role {
   font-size: 1.4rem;
   margin-bottom: 2.6rem;
+}
+
+@media (width < 768px) {
+  .embla {
+    --slide-size: 85%;
+    --slide-spacing: 0.5rem;
+  }
+  .embla__slide__info {
+    text-indent: 2rem;
+  }
 }

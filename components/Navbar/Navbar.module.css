@@ -1,6 +1,7 @@
 .navbar {
   color: rgb(255, 255, 255);
   width: 100vw;
+  z-index: 100;
 }
 
 .navlinks {
@@ -31,6 +32,10 @@
   }
 }
 @media (width < 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+  }
   .navlinks {
     display: flex;
     flex-direction: column;
