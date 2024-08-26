@@ -80,6 +80,9 @@
 }
 
 @media (width < 768px) {
+  /* .header {
+    margin-top: 10rem;
+  } */
   .logo_band {
     z-index: -1;
   }
